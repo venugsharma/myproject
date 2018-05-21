@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="260dp"
+    android:layout_height="360dp"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="360dp"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/login_travel_register">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWelcome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:text="@string/welcome_location"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLocality"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtWelcome"
+            android:textColor="@color/material_blue_grey_700"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:text="@string/locality"
+            android:textStyle="bold"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtposting"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtLocality"
+            android:layout_marginTop="30dp"
+            android:textSize="18sp"
+            android:textAlignment="center"
+            android:text="@string/start_posting" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtQues"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/layoutBtn"
+            android:layout_marginTop="30dp"
+            android:layout_marginBottom="10dp"
+            android:textSize="18sp"
+            android:text="@string/resident_ques" />
+
+        <LinearLayout
+            android:id="@+id/layoutBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal">
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnResNo"
+                android:layout_weight="1"
+                android:text="@string/no"
+                android:textColor="@color/colorPrimary"
+                android:background="@color/white"
+                android:layout_margin="5dp"/>
+
+
+            <Button
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnResYes"
+                android:background="@color/colorPrimary"
+                android:layout_weight="1"
+                android:text="@string/yes"
+                android:textColor="@color/white"
+                android:layout_margin="5dp"/>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

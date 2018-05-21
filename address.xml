@@ -1,0 +1,178 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/neighbour_main"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99ffffff"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="1"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:gravity="top|center_horizontal"
+            android:padding="10dp"
+            android:layout_margin="10dp"
+            android:weightSum="1">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.16"
+                android:background="@drawable/circular_colorbackground_box"
+                android:gravity="center"
+                android:padding="10dp"
+                android:text="@string/Addresss"
+                android:textColor="#0b0b0b" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:layout_marginTop="20dp"
+
+            android:orientation="vertical"
+            android:padding="20dp"
+            android:layout_weight="0.9">
+
+            <EditText
+                android:id="@+id/txtUserEmail"
+
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circular_background_box"
+                android:ellipsize="start"
+                android:gravity="center"
+                android:hint="@string/Street"
+                android:inputType="textWebEmailAddress"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:id="@+id/txtUserPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circular_background_box"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/Society"
+                android:inputType="textPassword"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:id="@+id/txtUserLocality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circular_background_box"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/Locality"
+                android:maxLines="1"
+                android:padding="10dp"
+
+                >
+
+                <requestFocus />
+
+            </EditText>
+
+
+            <LinearLayout
+                 android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/txtUserCity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circular_background_box"
+                    android:gravity="center"
+                    android:hint="@string/City"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:padding="10dp" />
+
+
+                <EditText
+                    android:id="@+id/txtUserState"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circular_background_box"
+                    android:ellipsize="middle"
+                    android:gravity="center"
+                    android:hint="@string/State"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:padding="10dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                  android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/txtUserPincode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/circular_background_box"
+                    android:gravity="center"
+                    android:hint="@string/Pincode"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_marginTop="0dp"
+            android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="top|center_horizontal"
+            android:layout_weight="0.1"
+            android:weightSum="0.8">
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circular_colorbackground_box"
+                android:padding="10dp"
+                android:text="@string/SAVE"
+                android:layout_weight="0.16" />
+        </LinearLayout>
+
+     </LinearLayout>
+
+</LinearLayout>

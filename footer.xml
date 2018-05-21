@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:weightSum="5">
+
+        <Button
+            android:id="@+id/footerPofile"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:layout_gravity="center"
+            android:background="@color/colorPrimary"
+            android:drawableTop="@drawable/user"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/footerNotification"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:background="@color/colorPrimary"
+            android:drawableTop="@drawable/notification"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/footerCreateTattle"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:drawableTop="@drawable/create_tattle_ic2"
+            style="?android:attr/borderlessButtonStyle"/>
+
+
+        <Button
+            android:id="@+id/footerTrending"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:drawableTop="@drawable/trending"
+            style="?android:attr/borderlessButtonStyle"/>
+
+        <Button
+            android:id="@+id/footerFavorite"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_weight="1"
+            android:background="@color/colorPrimary"
+            android:drawableTop="@drawable/favorite1"
+            style="?android:attr/borderlessButtonStyle"/>
+    </LinearLayout>
+</RelativeLayout>

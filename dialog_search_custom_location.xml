@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="260dp"
+    android:layout_height="260dp"
+    android:layout_gravity="center"
+    android:gravity="center">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="260dp"
+        android:padding="20dp"
+        android:layout_gravity="center"
+        android:background="@drawable/login_travel_register">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtWelcome"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="20dp"
+            android:textSize="18sp"
+            android:text="@string/searched_locality"/>
+
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/txtLocality"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/txtWelcome"
+            android:textColor="@color/material_blue_grey_700"
+            android:layout_marginTop="20dp"
+            android:textSize="22sp"
+            android:text="@string/locality"
+            android:textStyle="bold"/>
+
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:id="@+id/btnResYes"
+            android:background="@color/colorPrimary"
+            android:text="@string/ok"
+            android:textColor="@color/white"
+            android:layout_margin="20dp"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

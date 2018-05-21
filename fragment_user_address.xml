@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/neighbour_main"
+    android:orientation="vertical">
+
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#99ffffff"
+        android:orientation="vertical"
+        android:weightSum="1">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.5"
+            android:gravity="center"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/circular_colorbackground_box"
+                android:padding="10dp"
+                android:text="@string/Addresss" />
+
+        </LinearLayout>
+
+        <LinearLayout
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:padding="10dp"
+                android:gravity="right">
+
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Detect Location"
+                    android:layout_gravity="center"
+                    android:textSize="18sp"
+                    android:textColor="@color/main_color_grey_900"
+                    android:layout_marginEnd="10dp"/>
+
+                <ImageView
+                    android:id="@+id/imgDetectLocation"
+                    android:layout_width="30dp"
+                    android:layout_height="30dp"
+                    android:layout_gravity="right"
+                    android:src="@drawable/loc" />
+
+
+
+            </LinearLayout>
+
+
+
+            <EditText
+
+                android:id="@+id/txtUserStreet"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/circular_background_box"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/Street"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+
+            <EditText
+                android:id="@+id/txtUserSociety"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circular_background_box"
+                android:ellipsize="end"
+                android:gravity="center"
+                android:hint="@string/Society"
+                android:maxLines="1"
+                android:padding="10dp" />
+
+
+            <!--<EditText-->
+                <!--android:id="@+id/txtUserLocality"-->
+                <!--android:focusableInTouchMode="true"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="wrap_content"-->
+                <!--android:layout_marginTop="20dp"-->
+                <!--android:background="@drawable/circular_background_box"-->
+                <!--android:ellipsize="end"-->
+                <!--android:gravity="center"-->
+                <!--android:hint="@string/Locality"-->
+                <!--android:inputType="textAutoCorrect"-->
+                <!--android:maxLines="1"-->
+                <!--android:padding="10dp"/>-->
+
+
+            <AutoCompleteTextView
+                android:padding="10dp"
+                android:gravity="center"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/circular_background_box"
+                android:id="@+id/txtUserLocality"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:hint="@string/locality"/>
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal">
+
+
+                <EditText
+                    android:id="@+id/txtUserCity"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginEnd="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circular_background_box"
+                    android:gravity="center"
+                    android:hint="@string/City"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:padding="10dp" />
+
+
+                <EditText
+                    android:id="@+id/txtUserState"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="5dp"
+                    android:layout_weight="1"
+                    android:background="@drawable/circular_background_box"
+                    android:ellipsize="middle"
+                    android:gravity="center"
+                    android:hint="@string/State"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:padding="10dp" />
+
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:baselineAligned="false"
+                android:orientation="horizontal"
+                android:weightSum="1">
+
+                <EditText
+                    android:id="@+id/txtUserPincode"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="0.5"
+                    android:background="@drawable/circular_background_box"
+                    android:gravity="center"
+                    android:hint="@string/Pincode"
+                    android:inputType="textCapWords"
+                    android:maxLines="1"
+                    android:padding="10dp" />
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.56"
+            android:gravity="center">
+
+            <Button
+                android:id="@+id/next"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:background="@drawable/circular_colorbackground_box"
+                android:padding="10dp"
+                android:text="@string/SAVE" />
+        </LinearLayout>
+    </LinearLayout>
+</LinearLayout>
